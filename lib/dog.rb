@@ -58,8 +58,6 @@ class Dog
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
       
       self
-    end 
-  
   end 
   
   def self.find_by_name(name) 
